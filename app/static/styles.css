@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-color: #f5f7fb;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    box-sizing: border-box;
+
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 12px;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-family: inherit;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4f46e5;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid #4f46e5;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.result {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result.positive {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.result.negative {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.container > p {
+    margin: 0;
+    color: #666;
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+}
+
